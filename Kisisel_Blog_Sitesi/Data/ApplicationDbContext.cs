@@ -6,12 +6,12 @@ namespace Kisisel_Blog_Sitesi.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
-        public DbSet<GalleryPhoto> GalleryPhotos { get; set; }
-
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
-        public DbSet<Kisisel_Blog_Sitesi.Models.EducationContent> EducationContent { get; set; } = default!;
+
+        public DbSet<GalleryPhoto> GalleryPhotos { get; set; }
+        public DbSet<EducationContent> EducationContent { get; set; } = default!;
     }
 }
