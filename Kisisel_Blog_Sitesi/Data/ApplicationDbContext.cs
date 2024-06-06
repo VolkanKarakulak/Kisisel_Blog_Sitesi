@@ -12,5 +12,6 @@ namespace Kisisel_Blog_Sitesi.Data
             : base(options)
         {
         }
+        public DbSet<Kisisel_Blog_Sitesi.Models.EducationContent> EducationContent { get; set; } = default!;
     }
 }
